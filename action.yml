@@ -1,0 +1,27 @@
+name: 'PolicyLayer Scan'
+description: 'Scan MCP server config for security risks'
+inputs:
+  config-path:
+    description: 'Path to MCP config file'
+    required: false
+    default: '.mcp.json'
+  api-url:
+    description: 'Scan API URL'
+    required: false
+    default: 'https://policylayer.com/api/scan'
+  fail-on:
+    description: 'Fail if findings at or above this severity (Low, Medium, High, Critical)'
+    required: false
+    default: ''
+  github-token:
+    description: 'GitHub token for PR comments'
+    required: false
+    default: ${{ github.token }}
+outputs:
+  report-url:
+    description: 'URL to the scan report'
+  report-id:
+    description: 'ID of the scan report'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

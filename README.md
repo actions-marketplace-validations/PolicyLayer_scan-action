@@ -43,7 +43,7 @@ The PR comment updates on each push (no duplicate comments).
 
 > **PolicyLayer MCP Scan**
 >
-> [View Full Report](https://policylayer.com/scan/report/example)
+> [View Full Report](https://policylayer.com/scan/report/65545482-5d1d-472f-9fca-472ff1181d0d)
 >
 > | Metric | Value |
 > |--------|-------|
